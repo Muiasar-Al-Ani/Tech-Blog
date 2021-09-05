@@ -40,7 +40,7 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
-router.get("/edit/:id", withAuth, (req, res) => {
+router.get("/edit/:id", withAuth, async (req, res) => {
   if (!req.session.loggedIn) {
     res.redirect("/login");
   } else {
