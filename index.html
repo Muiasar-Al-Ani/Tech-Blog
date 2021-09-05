@@ -26,9 +26,15 @@
       body {
         font-family: "Sriracha", cursive;
         font-size: 1.5rem;
+        background-image: url("https://source.unsplash.com/1600x900/?tech");
+        background-size: cover;
+        height: 100vh;
       }
       .navbar-brand {
         font-size: 2rem;
+      }
+      .customCard {
+        opacity: 0.9;
       }
     </style>
 
@@ -59,7 +65,31 @@
       </nav>
     </header>
 
-    <main></main>
+    <main class="d-flex justify-content-center">
+      <div
+        class="
+          card
+          align
+          col-lg-10 col-md-10 col-sm-10
+          mt-5
+          bg-dark bg-gradient
+          text-white
+          customCard
+        "
+      >
+        <div class="card-body">
+          <h5 class="card-title">Why MVC is sp important</h5>
+          <br />
+          <hr />
+
+          <p class="secondary">
+            MVC allows developers to maintain a true separation of concerns,
+            devising their code between the Model layer for data, the View layer
+            for design, and the Controller layer for application logic
+          </p>
+        </div>
+      </div>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>
