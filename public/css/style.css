@@ -1,0 +1,16 @@
+body {
+    font-family: "Sriracha", cursive;
+    font-size: 1.5rem;
+    background-image: url("https://source.unsplash.com/1600x900/?tech");
+    background-size: cover;
+    height: 100vh;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .customCard {
+    opacity: 0.9;
+  }
+  .user-comment{
+    font-size: 1.3rem;
+  }
