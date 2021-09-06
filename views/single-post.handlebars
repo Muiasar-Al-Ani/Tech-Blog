@@ -1,0 +1,38 @@
+{{> post-info post}}
+
+{{#if loggedIn}}
+      <div
+        class="
+          card
+          align
+          col-lg-10 col-md-10 col-sm-10
+          mt-5
+          bg-dark bg-gradient
+          text-white
+          customCard
+        "
+      >
+        <div class="card-body">
+          <h3 class="card-title"></h3>
+          <hr />
+
+          <form id="comment-form" class="card-body">
+            <label class="form-label" >Comment</label>
+            <br>
+            <div class="input-group mb-3">
+                <input id="comment" name="comment-body" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+           
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
