@@ -36,10 +36,9 @@
       .customCard {
         opacity: 0.9;
       }
-      .user-comment{
+      .user-comment {
         font-size: 1.3rem;
       }
-     
     </style>
 
     <title>Tech Blog</title>
@@ -69,17 +68,24 @@
       </nav>
     </header>
 
-    <main class="d-flex justify-content-center">
+    <main class="d-flex justify-content-center flex-column">
       <div
-        class="
-          card
-          align
-          col-lg-10 col-md-10 col-sm-10
-          mt-5
-          bg-dark bg-gradient
-          text-white
-          customCard
-        "
+        class="card align mx-4 mt-4 bg-dark bg-gradient text-white customCard"
+      >
+        <div class="card-header">
+          <h4 class="float-start">
+            <a class="text-decoration-none" href="/post/{{id}}">{{title}}</a>
+          </h4>
+          <p class="float-end">
+            Posted by {{user.username}} on {{format_date created_at}}
+          </p>
+        </div>
+        <hr />
+        <p class="card-body">{{content}}</p>
+      </div>
+
+      <div
+        class="card align mx-4 mt-4 bg-dark bg-gradient text-white customCard"
       >
         <div class="card-body">
           <h3 class="card-title">Create New Post</h3>
@@ -87,18 +93,30 @@
 
           <form id="new-post-form" class="card-body">
             <label class="form-label" for="post-title">Title</label>
-            <br>
+            <br />
             <div class="input-group mb-3">
-              <input id="post-title" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input
+                id="post-title"
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
             </div>
             <label class="form-label" for="content">Content</label>
-            <br>
+            <br />
             <div class="input-group mb-3">
-              <input name="content" id="content" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input
+                name="content"
+                id="content"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
             </div>
             <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Create</button>
-          </div>
+              <button type="submit" class="btn btn-primary">Create</button>
+            </div>
           </form>
         </div>
       </div>

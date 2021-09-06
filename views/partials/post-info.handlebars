@@ -1,0 +1,15 @@
+<div class="card align mx-4 mt-4 bg-dark bg-gradient text-white customCard">
+  <div class="card-header">
+    <h4 class="float-start">
+      <a class="text-decoration-none" href="/post/{{id}}">{{title}}</a>
+    </h4>
+    <p class="float-end">
+      Posted by
+      {{user.username}}
+      on
+      {{format_date created_at}}
+    </p>
+  </div>
+  <hr />
+  <p class="card-body">{{content}}</p>
+</div>
