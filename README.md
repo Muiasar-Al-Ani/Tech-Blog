@@ -21,7 +21,7 @@ This is a full stack web application CMS-style sit similar to a Wordpress site. 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-[Click here to see the running Full Stack Tech Blog!](sldkjf;sldkfjslfj)
+[Click here to see the running Full Stack Tech Blog!](https://fathomless-citadel-98626.herokuapp.com/)
 
 
 ## Installation : 
@@ -58,6 +58,7 @@ User needs to install the app by running the command `npm install` then user nee
 - Express-session.
 - Dotenv.
 - Bcrypt.
+- Heroku.
 
 ## Screen shots : 
 ### Here are screen shots of my deployed Full Stack Tech Blog App!
