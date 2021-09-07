@@ -23,5 +23,5 @@ const deleteFormHandler = async event => {
 };
 
 document
-  .querySelector(".delete-post-btn")
+  .querySelector("#delete-post-btn")
   .addEventListener("click", deleteFormHandler);

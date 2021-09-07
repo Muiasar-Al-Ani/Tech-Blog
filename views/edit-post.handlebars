@@ -13,7 +13,7 @@
           <h3 class="card-title">Edit Post</h3>
           <hr />
 
-          <form class="card-body">
+          <form class="edit-post-form">
             <label class="form-label" for="post-title">Title</label>
             <br>
             <div class="input-group mb-3">
@@ -22,13 +22,13 @@
             <label class="form-label" for="content">Content</label>
             <br>
             <div class="input-group mb-3">
-              <input name="content" value="{{post.content}}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input name="content" value="{{post.content}}" type="text" class="form-control" >
             </div>
             <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Update Post</button>
+            <button id="update-post-btn" type="submit" class="btn btn-primary fs-5">Update Post</button>
           </div>
             <div class="d-grid gap-2">
-            <button type="button" class="btn btn-primary">Delete</button>
+            <button id="delete-post-btn" type="button" class="btn btn-primary my-3 fs-5">Delete</button>
           </div>
           </form>
         </div>

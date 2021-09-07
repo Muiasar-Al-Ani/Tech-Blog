@@ -1,4 +1,4 @@
-<div class="card align mx-4 mt-4 bg-dark bg-gradient text-white customCard">
+<div class="card align mx-4 mt-4 bg-dark bg-gradient text-white customCard position-relative">
   <div class="card-header">
     <h4 class="float-start">
       <a class="text-decoration-none" href="/post/{{id}}">{{title}}</a>
@@ -12,4 +12,7 @@
   </div>
   <hr />
   <p class="card-body">{{content}}</p>
+  <div class="position-absolute bottom-0 end-0">
+    <a class="me-3 text-decoration-none" href="/post/{{id}}">{{comments.length}} comment</a>
+  </div>
 </div>

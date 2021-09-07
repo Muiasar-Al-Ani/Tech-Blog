@@ -25,11 +25,10 @@ const commentFormHandler = async event => {
       document.location.reload();
     } else {
       alert(response.statusText);
-      document.querySelector("#comment-form").style.display = "block";
     }
   }
 };
 
 document
-  .querySelector(".comment-form")
+  .querySelector("#comment-form")
   .addEventListener("submit", commentFormHandler);
